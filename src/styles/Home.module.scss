@@ -1,0 +1,8 @@
+.wrapper {
+  @apply px-24 py-5 text-center h-screen;
+
+  .btn {
+    @apply text-2xl border
+    accent-primary rounded-md;
+  }
+}

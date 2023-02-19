@@ -1,0 +1,31 @@
+{
+  "singleQuote": true,
+  "parser": "flow",
+  "tabWidth": 4,
+  "bracketSpacing": true,
+  "printWidth": 110,
+  "useTabs": false,
+  "semi": false,
+  "trailingComma": "all",
+  "arrowParens": "avoid",
+  "proseWrap": "never",
+  "endOfLine": "auto",
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@screens/(.*)$",
+    "^@components/(.*)$",
+    "^@ui/(.*)$",
+    "^@hooks/(.*)$",
+    "^@shared/(.*)$",
+    "^@services/(.*)$",
+    "^@assets/(.*)$",
+    "^@utils/(.*)$",
+    "^@configs/(.*)$",
+    "^@store/(.*)$",
+    "^../(.*)",
+    "^./(.*)",
+    "(.scss)$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
