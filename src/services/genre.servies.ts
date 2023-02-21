@@ -3,8 +3,9 @@ import { IGenre } from '../types/IGenre'
 import {api} from "../API/interceptors";
 
 export const genreServies = {
-    async getPopular() {
-        return api.get<IGenre[]>(getGenresUrl(''))
+    async getAll(search?: string) {
+        return api.get<IGenre[]>(getGenresUrl(''), {
+            params: {search}
+        })
     },
-
 }

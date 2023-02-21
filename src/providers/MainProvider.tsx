@@ -1,5 +1,7 @@
+import { FC, ReactNode } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import {FC, ReactNode} from "react";
+
+import { Layout } from '@components/Layout/Layout'
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -7,11 +9,10 @@ const queryClient = new QueryClient({
     },
 })
 
-
-export const MainProvider: FC<{children: ReactNode}> = ({children}) => {
+export const MainProvider: FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <QueryClientProvider client={queryClient}>
-            {children}
+            <Layout>{children}</Layout>
         </QueryClientProvider>
     )
-};
+}

@@ -1,4 +1,4 @@
-import { IMenu } from '@components/Layout/Navigation/Menu/menu.types'
+import { IMenu } from '@components/Layout/Navigation/components/Menu/menu.types'
 
 export const MAIN_MENU: IMenu = {
     title: 'Menu',

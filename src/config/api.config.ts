@@ -6,3 +6,6 @@ export const getMoviesUrl = (slug: string) => '/movies' + slug
 export const getActorsUrl = (slug: string) => '/actors' + slug
 export const getGenresUrl = (slug: string) => '/genres' + slug
 export const getRatingsUrl = (slug: string) => '/ratings' + slug
+
+
+export const getPopularMovies = () => '/movies/most-popular'

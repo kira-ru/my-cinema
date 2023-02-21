@@ -1,0 +1,11 @@
+.wrapper {
+  @apply p-2 animate-fade;
+
+  .heading {
+    @apply font-bold text-xl mb-5 text-white capitalize;
+  }
+
+  .button {
+    @apply block p-2 text-center btn-primary
+  }
+}

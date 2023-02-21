@@ -1,13 +1,12 @@
 import { NextPage } from 'next'
 
-import {Layout} from "@components/Layout/Layout";
+import { Home } from '@components/sceens/Home/Home'
 
 const HomePage: NextPage = () => {
-    return <Layout>gsd</Layout>
+    return <Home />
 }
 
 export default HomePage
-
 
 // <>
 //     <Head>
