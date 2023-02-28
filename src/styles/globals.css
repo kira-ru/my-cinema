@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
 
 @tailwind base;
 @tailwind components;
@@ -37,4 +38,12 @@ input[type='file']::-webkit-file-upload-button {
 
 input:focus {
   box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #101215 inset;
+  -webkit-text-fill-color: white;
 }

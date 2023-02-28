@@ -1,0 +1,18 @@
+
+.wrapper {
+  @apply mt-32;
+
+  form {
+    @apply w-1/2 mx-auto air-block p-7;
+
+    .buttons {
+      @apply flex justify-center;
+
+      > button {
+        &:first-child {
+          @apply mr-4;
+        }
+      }
+    }
+  }
+}

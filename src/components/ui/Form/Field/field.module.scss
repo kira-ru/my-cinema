@@ -1,0 +1,22 @@
+.common {
+  @apply relative text-gray-600
+  border-b border-b-gray-600
+  transition-colors
+  focus-within:border-b-white
+  focus-within:text-white;
+}
+
+
+.field {
+  @apply text-left;
+
+  .input {
+    @apply outline-border-none
+     w-full
+    m-0 px-0 focus:ring-0 bg-transparent;
+  }
+
+  .error {
+    @apply absolute -bottom-6 left-0 text-sm w-full text-primary;
+  }
+}

@@ -1,4 +1,4 @@
-import { api } from '../API/interceptors'
+import { api } from '../API/axios'
 import { getMoviesUrl, getPopularMovies } from '../config/api.config'
 import { IMovie } from '../types/IMovie'
 

@@ -4,7 +4,7 @@ import {IMenuItem} from "@components/Layout/Navigation/components/Menu/menu.type
 import {getGenreUrl} from "../helpers/getUrls";
 
 export const usePopularGenres = () => {
-    const popularGenres = useQuery('popular genres', () => genreServies.getAll(), {
+    const popularGenres = useQuery('popular Genres', () => genreServies.getAll(), {
         select: ({data}) => data.map(genre => ({
             icon: genre.icon,
             title: genre.name,
