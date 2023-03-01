@@ -3,7 +3,7 @@ import { useQuery } from 'react-query'
 
 import { useDebounce } from '@hooks/useDebounce'
 
-import { MoviesServies } from '@services/moviesServies'
+import { MoviesServies } from '@services/MoviesServies'
 
 export const useSearch = () => {
     const [inputValue, setInputValue] = useState<string>('')

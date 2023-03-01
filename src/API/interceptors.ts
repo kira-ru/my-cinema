@@ -2,7 +2,7 @@ import axios from "axios";
 import {API_URL} from "../config/api.config";
 import Cookies from "js-cookie";
 import {errorCatch} from "./errorCatch";
-import {AuthServies} from "@services/authServies";
+import {AuthServies} from "@services/AuthServies";
 
 export const axiosInstance = axios.create({
     baseURL: API_URL,

@@ -3,7 +3,7 @@ import { useQuery } from 'react-query'
 
 import { SkeletonLoader } from '@ui/SkeletonLoader/SkeletonLoader'
 
-import { MoviesServies } from '@services/moviesServies'
+import { MoviesServies } from '@services/MoviesServies'
 import {MovieList} from "@components/Layout/Sidebar/componets/MovieList/MovieList";
 
 export const PopularMovies: FC = () => {

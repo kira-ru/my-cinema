@@ -4,7 +4,7 @@ import { FC } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { useQuery } from 'react-query'
 
-import { MoviesServies } from '@services/moviesServies'
+import { MoviesServies } from '@services/MoviesServies'
 
 import { getMovieUrl } from '../../../../../helpers/getUrls'
 import { IMovie } from '../../../../../types/IMovie'

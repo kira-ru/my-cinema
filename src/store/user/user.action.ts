@@ -1,6 +1,6 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {AuthResponse, EmailPassword, IToken} from "@store/user/user.types";
-import {AuthServies} from "@services/authServies";
+import {AuthServies} from "@services/AuthServies";
 import {toastError} from "@utils/api/toast-error";
 import {toastr} from "react-redux-toastr";
 import {array} from "prop-types";

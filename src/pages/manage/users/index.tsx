@@ -1,8 +1,8 @@
 import {NextPageAuth} from "@providers/AuthProvider/types";
-import {Users} from "@screens/Admin/users/Users";
+import {UserList} from "@screens/Admin/users/UserList";
 
 const UsersPage: NextPageAuth = () => {
-    return <Users/>
+    return <UserList/>
 };
 export default UsersPage
 UsersPage.isOnlyAdmin = true

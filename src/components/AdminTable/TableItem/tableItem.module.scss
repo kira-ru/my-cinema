@@ -11,14 +11,6 @@
   }
 }
 
-.top {
-  @apply bg-primary bg-opacity-20 shadow-lg mt-8 hover:bg-opacity-20;
-
-  > div {
-    @apply text-opacity-90 font-semibold py-2.5;
-  }
-}
-
 .actions {
   @apply flex items-center;
 
