@@ -1,5 +1,5 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {AuthResponse, EmailPassword} from "@store/user/user.types";
+import {AuthResponse, EmailPassword, IToken} from "@store/user/user.types";
 import {AuthServies} from "@services/authServies";
 import {toastError} from "@utils/api/toast-error";
 import {toastr} from "react-redux-toastr";
@@ -36,14 +36,13 @@ export const logout = createAsyncThunk('user/logout', async () => {
     await AuthServies.logout()
 })
 
-export const checkAuth = createAsyncThunk('user/authcheck', async (_, {rejectWithValue, dispatch}) => {
+export const checkAuth = createAsyncThunk<IToken>('user/authcheck', async (_, {rejectWithValue, dispatch}) => {
     try {
         const response = await AuthServies.getNewTokens()
         toastr.success('Check Auth', 'Complete successfully')
         return response.data
 
     } catch (error) {
-
         if (errorCatch(error) === 'jwt expired') {
             toastr.error(
                 'Logout',

@@ -2,7 +2,6 @@ import {FC, useEffect} from 'react'
 
 import { Meta } from '@utils/meta/Meta'
 import {Heading} from "@ui/Heading/Heading";
-import {AuthServies} from "@services/authServies";
 
 export const Home: FC = () => {
     useEffect(() => {

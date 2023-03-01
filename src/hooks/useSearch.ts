@@ -18,7 +18,6 @@ export const useSearch = () => {
         },
     )
 
-    console.log(data)
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         setInputValue(event.target.value)
     }

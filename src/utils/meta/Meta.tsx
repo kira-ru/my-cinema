@@ -39,6 +39,7 @@ export const Meta: FC<IMeta> = ({ title, image, description, children }) => {
                     </>
                 )}
             </Head>
+
             {children}
         </>
     )
